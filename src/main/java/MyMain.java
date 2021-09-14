@@ -27,10 +27,15 @@ public class MyMain {
     //     decimalToBinary(152) => "10011000"
     public static String decimalToBinary(int decimal) {
         String bina = "";
+        if (decimal == 1)
+            return "1";
+        if (decimal == 0)
+            return  "0";
         while (decimal>0){
             bina+=""+decimal%2;
             decimal/=2;
         }
+        System.out.println(bina);
         String binar = "";
         for(int i = bina.length()-1;i>=0;i--){
             binar+=bina.charAt(i);
