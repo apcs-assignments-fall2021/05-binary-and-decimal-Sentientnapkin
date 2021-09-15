@@ -35,7 +35,6 @@ public class MyMain {
             bina+=""+decimal%2;
             decimal/=2;
         }
-        System.out.println(bina);
         String binar = "";
         for(int i = bina.length()-1;i>=0;i--){
             binar+=bina.charAt(i);
